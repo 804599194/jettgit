@@ -10,4 +10,4 @@ assertIsNotNone(x，[msg='测试失败时打印的信息'])： 断言x是否None，不是None则测试
 assertIn(a,b，[msg='测试失败时打印的信息'])： 断言a是否在b中，在b中则测试用例通过。
 assertNotIn(a,b，[msg='测试失败时打印的信息'])： 断言a是否在b中，不在b中则测试用例通过。
 assertIsInstance(a,b，[msg='测试失败时打印的信息'])： 断言a是是b的一个实例，是则测试用例通过。
-assertNotIsInstance(a,b，[msg='测试失败时打印的信息'])： 断言a是是b的一个实例，不是则测试用例通过。
+assertNotIsInstance(a,b，[msg='测试失败时打印的信息'])： 断言a是是b的一个实例，不是则测试用例通过。1
