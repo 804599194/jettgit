@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="11" failures="0" file="test_01crm.py" name="test_01crm.merchant_Management-20200313162421" skipped="0" tests="11" time="56.580" timestamp="2020-03-13T16:25:18">
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="37" name="test_case01" time="45.952" timestamp="2020-03-13T16:25:07">
+		<!--进入CRM工作台-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 40, in crm_job
+    t1 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'李和健')]")
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 40, in test_case01
+    t2,t = h.crm_job()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 45, in crm_job
+    t1 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'李和健')]")
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="52" name="test_case02" time="0.828" timestamp="2020-03-13T16:25:08">
+		<!--新增商家-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 55, in test_case02
+    mobile, t1, t4 = h.xinzengshangjia()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 52, in xinzengshangjia
+    "(//android.view.View[@content-desc='进入'])[3]").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="66" name="test_case03" time="0.708" timestamp="2020-03-13T16:25:09">
+		<!--编辑商家-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 69, in test_case03
+    mobile, t1, t4, t6, t8=h.bianjishangjia()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 210, in bianjishangjia
+    t1 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'自动化-商家')]")
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="88" name="test_case04" time="1.703" timestamp="2020-03-13T16:25:11">
+		<!--新增商家员工-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 91, in test_case04
+    mobile, tel, t1, t4, t5 = h.xinzengyuangong()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 269, in xinzengyuangong
+    Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='商家员工']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[13238404633
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="103" name="test_case05" time="0.710" timestamp="2020-03-13T16:25:11">
+		<!--商家员工拨号功能-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 106, in test_case05
+    t = h.yuangongbohao()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 307, in yuangongbohao
+    Sin().driver.find_element_by_xpath("	//android.widget.TextView[@content-desc='返回']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="118" name="test_case06" time="1.898" timestamp="2020-03-13T16:25:13">
+		<!--编辑商家员工-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 121, in test_case06
+    t1, t4, t6 = h.bianjiyuangong()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 326, in bianjiyuangong
+    Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='编辑资料']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="139" name="test_case07" time="0.738" timestamp="2020-03-13T16:25:14">
+		<!--填写商家员工跟进情况-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 142, in test_case07
+    g_time, t1, t4 = h.s_genjinqingkuang()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 361, in s_genjinqingkuang
+    Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='跟进情况']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="155" name="test_case08" time="0.718" timestamp="2020-03-13T16:25:15">
+		<!--商家拜访记录-签到-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 158, in test_case08
+    t1, t4 = h.baifangjilu_qiandao()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 396, in baifangjilu_qiandao
+    Sin().driver.find_element_by_xpath("	//android.widget.TextView[@content-desc='返回']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="169" name="test_case09" time="1.875" timestamp="2020-03-13T16:25:16">
+		<!--商家拜访记录-签退-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 172, in test_case09
+    t1, t4, t5 = h.baifangjilu_qiantui()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 433, in baifangjilu_qiantui
+    "//android.webkit.WebView[@content-desc='拜访签退']/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.view.View[3]/android.widget.EditText")
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="185" name="test_case10" time="0.759" timestamp="2020-03-13T16:25:17">
+		<!--筛选商家名称-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 188, in test_case10
+    list, f = h.shaixuan()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 469, in shaixuan
+    Sin().driver.find_element_by_xpath("//android.widget.TextView[@content-desc='返回']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="209" name="test_case11" time="0.692" timestamp="2020-03-13T16:25:18">
+		<!--筛选跟进时间-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 212, in test_case11
+    list, f = h.follow_date()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 518, in follow_date
+    Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='跟进时间']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

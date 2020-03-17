@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="10" failures="0" file="test_01crm.py" name="test_01crm.merchant_Management-20200313180307" skipped="0" tests="11" time="66.347" timestamp="2020-03-13T18:04:13">
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="37" name="test_case01" time="34.096" timestamp="2020-03-13T18:03:41">
+		<!--进入CRM工作台-->
+		<system-out>
+<![CDATA[进入CRM工作台成功
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="52" name="test_case02" time="25.269" timestamp="2020-03-13T18:04:06">
+		<!--新增商家-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 55, in test_case02
+    mobile, t1, t4 = h.xinzengshangjia()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 103, in xinzengshangjia
+    "//android.webkit.WebView[@content-desc='新增商家']/android.view.View/android.view.View/android.view.View/"
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[0 1512
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="66" name="test_case03" time="2.070" timestamp="2020-03-13T18:04:08">
+		<!--编辑商家-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 69, in test_case03
+    mobile, t1, t4, t6, t8=h.bianjishangjia()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 218, in bianjishangjia
+    "(//android.view.View[@content-desc='编辑资料'])").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[自动化-商家19960(编辑)
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="88" name="test_case04" time="1.502" timestamp="2020-03-13T18:04:10">
+		<!--新增商家员工-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 91, in test_case04
+    mobile, tel, t1, t4, t5 = h.xinzengyuangong()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 269, in xinzengyuangong
+    Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='商家员工']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[18938868570
+]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="103" name="test_case05" time="2.109" timestamp="2020-03-13T18:04:12">
+		<!--商家员工拨号功能-->
+		<error message="Message: An element could not be located on the page using the given search parameters.
+" type="NoSuchElementException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 106, in test_case05
+    t = h.yuangongbohao()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 310, in yuangongbohao
+    "//android.webkit.WebView[@content-desc='商家员工']/android.view.View/android.view.View/android.view.View/"
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="118" name="test_case06" time="1.209" timestamp="2020-03-13T18:04:13">
+		<!--编辑商家员工-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 121, in test_case06
+    t1, t4, t6 = h.bianjiyuangong()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 326, in bianjiyuangong
+    Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='编辑资料']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="139" name="test_case07" time="0.018" timestamp="2020-03-13T18:04:13">
+		<!--填写商家员工跟进情况-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 142, in test_case07
+    g_time, t1, t4 = h.s_genjinqingkuang()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 361, in s_genjinqingkuang
+    Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='跟进情况']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="155" name="test_case08" time="0.026" timestamp="2020-03-13T18:04:13">
+		<!--商家拜访记录-签到-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 158, in test_case08
+    t1, t4 = h.baifangjilu_qiandao()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 396, in baifangjilu_qiandao
+    Sin().driver.find_element_by_xpath("	//android.widget.TextView[@content-desc='返回']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="169" name="test_case09" time="0.016" timestamp="2020-03-13T18:04:13">
+		<!--商家拜访记录-签退-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 172, in test_case09
+    t1, t4, t5 = h.baifangjilu_qiantui()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 430, in baifangjilu_qiantui
+    TouchAction(Sin().driver).tap(x=374, y=1338).perform()     #模拟坐标点击签到记录
+  File "C:\Python37\lib\site-packages\appium\webdriver\common\touch_action.py", line 136, in perform
+    self._driver.execute(Command.TOUCH_ACTION, params)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="185" name="test_case10" time="0.017" timestamp="2020-03-13T18:04:13">
+		<!--筛选商家名称-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 188, in test_case10
+    list, f = h.shaixuan()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 469, in shaixuan
+    Sin().driver.find_element_by_xpath("//android.widget.TextView[@content-desc='返回']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_01crm.merchant_Management" file="test_01crm.py" line="209" name="test_case11" time="0.014" timestamp="2020-03-13T18:04:13">
+		<!--筛选跟进时间-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_01crm.py", line 212, in test_case11
+    list, f = h.follow_date()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_shangjia.py", line 518, in follow_date
+    Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='跟进时间']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

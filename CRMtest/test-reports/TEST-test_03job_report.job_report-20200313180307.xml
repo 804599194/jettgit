@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="6" failures="0" file="test_03job_report.py" name="test_03job_report.job_report-20200313180307" skipped="0" tests="6" time="1.132" timestamp="2020-03-13T18:04:16">
+	<testcase classname="test_03job_report.job_report" file="test_03job_report.py" line="24" name="test_case16" time="0.041" timestamp="2020-03-13T18:04:15">
+		<!--新增日报-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_03job_report.py", line 27, in test_case16
+    t1 = t.add_daily()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_job_report.py", line 30, in add_daily
+    TouchAction(Sin().driver).tap(x=82, y=176).perform()
+  File "C:\Python37\lib\site-packages\appium\webdriver\common\touch_action.py", line 136, in perform
+    self._driver.execute(Command.TOUCH_ACTION, params)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_03job_report.job_report" file="test_03job_report.py" line="37" name="test_case17" time="0.022" timestamp="2020-03-13T18:04:15">
+		<!--新增周报-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_03job_report.py", line 40, in test_case17
+    t1 = t.add_weekly()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_job_report.py", line 110, in add_weekly
+    "//android.widget.TextView[@content-desc='返回']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_03job_report.job_report" file="test_03job_report.py" line="49" name="test_case18" time="0.016" timestamp="2020-03-13T18:04:15">
+		<!--新增月报-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_03job_report.py", line 52, in test_case18
+    t1 = t.add_monthly()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_job_report.py", line 175, in add_monthly
+    "//android.widget.TextView[@content-desc='返回']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_03job_report.job_report" file="test_03job_report.py" line="62" name="test_case19" time="0.017" timestamp="2020-03-13T18:04:15">
+		<!--筛选汇报类型-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_03job_report.py", line 65, in test_case19
+    list,f,list1,k = t.filtrate_type()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_job_report.py", line 236, in filtrate_type
+    "//android.widget.TextView[@content-desc='返回']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_03job_report.job_report" file="test_03job_report.py" line="101" name="test_case20" time="0.019" timestamp="2020-03-13T18:04:15">
+		<!--筛选日报日期-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_03job_report.py", line 104, in test_case20
+    list,f = t.filtrate_date()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_job_report.py", line 334, in filtrate_date
+    "//android.view.View[@content-desc='新增汇报']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+	<testcase classname="test_03job_report.job_report" file="test_03job_report.py" line="126" name="test_case21" time="1.016" timestamp="2020-03-13T18:04:16">
+		<!--筛选我提交的报告-->
+		<error message="Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+" type="WebDriverException">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\test_03job_report.py", line 129, in test_case21
+    list, f = t.shaixuan()
+  File "C:\Users\Administrator\PycharmProjects\CRMtest\crm_job_report.py", line 418, in shaixuan
+    "//android.view.View[@content-desc='筛选']").click()
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "C:\Python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python37\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+
+]]>		</error>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testcase>
+</testsuite>

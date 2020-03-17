@@ -16,15 +16,14 @@ class d_job_report():
 
     def crm_job(self):
         time.sleep(2)
-        t1 = fengzhuang()
         t = 1
-        Sin().driver.find_element_by_xpath("//android.widget.RelativeLayout[@content-desc='工作[1]']/android.widget.TextView").click()
+        Sin().driver.find_element_by_id("com.alibaba.android.rimet:id/home_bottom_tab_button_work").click()
         time.sleep(2)
         TouchAction(Sin().driver).press(x=1006, y=1917).move_to(x=1043, y=1288).release().perform()
         time.sleep(2)
-        element = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.RelativeLayout/android.widget.FrameLayout/com.uc.webview.export.WebView/com.uc.webkit.be/android.webkit.WebView/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View[4]/android.view.View/android.view.View[1]/android.view.View"
-        t1.swipe_element(element,t)
-        time.sleep(3)
+        element = "//android.view.View[@content-desc='CRM开发版']"
+        m = fengzhuang()
+        m.swipe_element(element, t)
 
     def add_daily(self):
         TouchAction(Sin().driver).tap(x=82, y=176).perform()
@@ -62,17 +61,7 @@ class d_job_report():
         t.swipe_app(b)
         time.sleep(1)
         Sin().driver.find_element_by_xpath(
-            "//android.webkit.WebView[@content-desc='新建日报']/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.view.View/android.view.View[4]").click()
-        time.sleep(2)
-        n = 30
-        ele = Sin().driver.find_element_by_xpath("//android.webkit.WebView[@content-desc='新建日报']/android.view.View/"
-            "android.view.View/android.view.View/android.view.View[6]/android.view.View[1]/android.view.View[1]")
-        time.sleep(1)
-        t.swipe(ele,n)
-        time.sleep(1)
-
-        Sin().driver.find_element_by_xpath(
-            "//android.view.View[@content-desc='科技部']").click()
+           "//android.webkit.WebView[@content-desc='新建日报']/android.view.View/android.view.View/android.view.View/android.view.View[5]/android.view.View/android.view.View[4]").click()
         time.sleep(1)
         ele1 = Sin().driver.find_element_by_xpath("//android.webkit.WebView[@content-desc='新建日报']/android.view.View/"
             "android.view.View/android.view.View/android.view.View[6]/android.view.View[1]/android.view.View[2]")
@@ -86,8 +75,7 @@ class d_job_report():
         #print(ha)
         if ha == "false":   #判断按钮是否选中，返回的是String类型，不是boolean值
             Sin().driver.find_element_by_xpath(
-                "//android.webkit.WebView[@content-desc='新建日报']/android.view.View/android.view.View/android.view.View/"
-                "android.view.View[6]/android.view.View[1]/android.view.View[2]/android.view.View[21]/android.widget.CheckBox").click()
+                "//android.view.View[@content-desc='赵怡']").click()
         else:
             print("该按钮已选中，无需选择")
         time.sleep(1)
@@ -97,11 +85,8 @@ class d_job_report():
         Sin().driver.find_element_by_xpath(
             "//android.widget.Button[@content-desc='提交']").click()
         time.sleep(0.5)
-        try:
-            h1 = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='发布成功']")
-            h = h1.get_attribute(name='content-desc')
-        except NoSuchElementException:
-            print("该元素不存在")
+        h1 = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='发布成功']")
+        h = h1.get_attribute(name='content-desc')
         time.sleep(1)
         return h
 

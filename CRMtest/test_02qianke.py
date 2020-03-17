@@ -13,11 +13,12 @@ class broker_Management(unittest.TestCase):
         print('开始测试潜客管理')
         warnings.simplefilter("ignore", ResourceWarning)
 
-
+    '''
     def test_case01(self):
         t = qianke()
         t.crm_job()
         time.sleep(2)
+    '''
 
 
     def test_case12(self):
@@ -74,7 +75,7 @@ class broker_Management(unittest.TestCase):
             while i <= f:
                 try:
                     self.assertIn('自动', list[i])
-                    print(list[i])
+                    #print(list[i])
                     i = i + 1
                 except AssertionError:
                     i = i + 1

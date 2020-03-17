@@ -38,7 +38,7 @@ class qianke():
         name = t.name()
         qianke_name = "自动"+name
         time.sleep(2)
-        #TouchAction(Sin().driver).tap(x=72, y=159).perform()
+        TouchAction(Sin().driver).tap(x=72, y=159).perform()
         time.sleep(1)
         Sin().driver.find_element_by_xpath(
             "(//android.view.View[@content-desc='进入'])[1]").click()

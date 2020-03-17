@@ -26,13 +26,34 @@ class Login():
         time.sleep(5)
 
     def crm_job(self):
+        try:
+            login = Sin().driver.find_element_by_id("com.alibaba.android.rimet:id/et_pwd_login")
+            login1 = login.is_displayed()
+            print(login1)
+            if login1 == True:
+                login.send_keys("qweasdzxc807158")
+                time.sleep(1)
+                Sin().driver.find_element_by_id("com.alibaba.android.rimet:id/tv").click()
+        except NoSuchElementException:
+            pass
+
         time.sleep(2)
         t = 1
         Sin().driver.find_element_by_id("com.alibaba.android.rimet:id/home_bottom_tab_button_work").click()
+        #time.sleep(2)
+        #TouchAction(Sin().driver).press(x=1006, y=1917).move_to(x=1043, y=1288).release().perform()
         time.sleep(2)
-        TouchAction(Sin().driver).press(x=1006, y=1917).move_to(x=1043, y=1288).release().perform()
-        time.sleep(2)
-        element = "//android.view.View[@content-desc='CRM开发版']"
+
+        # 范围时间
+        d_time = datetime.datetime.strptime(str(datetime.datetime.now().date()) + '6:00', '%Y-%m-%d%H:%M')
+        d_time1 = datetime.datetime.strptime(str(datetime.datetime.now().date()) + '8:00', '%Y-%m-%d%H:%M')
+
+        # 当前时间
+        n_time = datetime.datetime.now()
+        if n_time > d_time and n_time < d_time1:
+            element = "//android.view.View[@content-desc='CRM']"
+        else:
+            element = "//android.view.View[@content-desc='CRM']"
         m = fengzhuang()
         m.swipe_element(element,t)
         time.sleep(2)
