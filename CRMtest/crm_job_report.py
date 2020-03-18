@@ -11,6 +11,9 @@ from appium.webdriver.common.touch_action import TouchAction
 import random
 import re
 from crm_fengzhuang import fengzhuang
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class d_job_report():
 
@@ -84,8 +87,10 @@ class d_job_report():
         time.sleep(1)
         Sin().driver.find_element_by_xpath(
             "//android.widget.Button[@content-desc='提交']").click()
-        time.sleep(0.5)
-        h1 = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='发布成功']")
+        #time.sleep(0.5)
+        #h1 = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='发布成功']")
+        h1 = WebDriverWait(Sin().driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//android.view.View[@content-desc='发布成功']")))
         h = h1.get_attribute(name='content-desc')
         time.sleep(1)
         return h
@@ -146,9 +151,10 @@ class d_job_report():
         time.sleep(2)
         Sin().driver.find_element_by_xpath(
             "//android.widget.Button[@content-desc='提交']").click()
-        time.sleep(0.5)
+        #time.sleep(0.5)
         try:
-            h1 = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='发布成功']")
+            h1 = WebDriverWait(Sin().driver, 10).until(
+                EC.visibility_of_element_located((By.XPATH, "//android.view.View[@content-desc='发布成功']")))
             h = h1.get_attribute(name='content-desc')
         except NoSuchElementException:
             print("该元素不存在")
@@ -207,9 +213,10 @@ class d_job_report():
         time.sleep(2)
         Sin().driver.find_element_by_xpath(
             "//android.widget.Button[@content-desc='提交']").click()
-        time.sleep(0.5)
+        #time.sleep(0.5)
         try:
-            h1 = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='发布成功']")
+            h1 = WebDriverWait(Sin().driver, 10).until(
+                EC.visibility_of_element_located((By.XPATH, "//android.view.View[@content-desc='发布成功']")))
             h = h1.get_attribute(name='content-desc')
         except NoSuchElementException:
             print("该元素不存在")
@@ -327,7 +334,7 @@ class d_job_report():
             "android.view.View[1]/android.view.View[4]").click()
         time.sleep(1)
         TouchAction(Sin().driver).tap(x=515, y=1821).perform()
-        time.sleep(1)
+        time.sleep(2)
         Sin().driver.find_element_by_xpath(
             "//android.webkit.WebView[@content-desc='新建日报']/android.view.View/android.view.View/android.view.View/"
             "android.view.View[3]/android.view.View/android.view.View[3]/android.widget.EditText").send_keys("自动化日报总结")
@@ -343,7 +350,7 @@ class d_job_report():
         time.sleep(1)
         Sin().driver.find_element_by_xpath(
             "//android.widget.Button[@content-desc='提交']").click()
-        time.sleep(1)
+        time.sleep(2)
         TouchAction(Sin().driver).tap(x=82, y=176).perform()
         time.sleep(1)
         Sin().driver.find_element_by_xpath(

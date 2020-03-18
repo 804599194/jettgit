@@ -11,7 +11,9 @@ from appium.webdriver.common.touch_action import TouchAction
 import random
 import re
 from crm_fengzhuang import fengzhuang
-
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class Login():
 
@@ -50,15 +52,17 @@ class Login():
 
         # 当前时间
         n_time = datetime.datetime.now()
+        time.sleep(1)
         if n_time > d_time and n_time < d_time1:
-            element = "//android.view.View[@content-desc='CRM']"
+            element = "//android.view.View[@content-desc='CRM']"     #正式服
         else:
-            element = "//android.view.View[@content-desc='CRM']"
+            element = "//android.view.View[@content-desc='CRM开发版']"    #测试服
         m = fengzhuang()
         m.swipe_element(element,t)
-        time.sleep(2)
+        time.sleep(3)
         try:             #寻找元素失败后等待1秒重新寻找
-            t1 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'李和健')]")
+            t1 = WebDriverWait(Sin().driver, 10).until(
+                      EC.visibility_of_element_located((By.XPATH, "//android.view.View[contains(@content-desc,'李和健')]")))
             t2 = t1.get_attribute(name='content-desc')
             t = Sin().driver.find_element_by_id("com.alibaba.android.rimet:id/title").text
         except NoSuchElementException:
@@ -211,9 +215,11 @@ class Login():
             "android.view.View[3]/android.view.View[2]/android.widget.EditText").send_keys("自动化测试")
         time.sleep(2)
         Sin().driver.find_element_by_accessibility_id("添加").click()
-        time.sleep(1.5)
+        #time.sleep(1)
         try:
-            t = Sin().driver.find_element_by_xpath("//android.webkit.WebView[@content-desc='商家详情']/android.view.View/android.view.View[2]/android.view.View")
+            #t = Sin().driver.find_element_by_xpath("//android.webkit.WebView[@content-desc='商家详情']/android.view.View/android.view.View[2]/android.view.View")
+            t = WebDriverWait(Sin().driver, 10).until(
+                EC.visibility_of_element_located((By.XPATH, "//android.webkit.WebView[@content-desc='商家详情']/android.view.View/android.view.View[2]/android.view.View")))
             t1 = t.get_attribute(name='content-desc')
             t2 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'自动化-商家')]")
             t4 = t2.get_attribute(name='content-desc')
@@ -314,8 +320,10 @@ class Login():
             "android.view.View[7]/android.view.View[2]/android.widget.EditText").send_keys("粤A888888")
         time.sleep(1)
         Sin().driver.find_element_by_xpath("//android.widget.Button[@content-desc='添加']").click()
-        time.sleep(1.5)
-        t = Sin().driver.find_element_by_xpath("//android.webkit.WebView[@content-desc='员工详情']/android.view.View/android.view.View[2]/android.view.View")
+        #time.sleep(1)
+        t = WebDriverWait(Sin().driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH,"//android.webkit.WebView[@content-desc='员工详情']/android.view.View/android.view.View[2]/android.view.View")))
+        #t = Sin().driver.find_element_by_xpath("//android.webkit.WebView[@content-desc='员工详情']/android.view.View/android.view.View[2]/android.view.View")
         t1 = t.get_attribute(name='content-desc')
         t2 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'自动员工')]")
         t4 = t2.get_attribute(name='content-desc')
@@ -349,7 +357,7 @@ class Login():
         try:
             ele = Sin().driver.find_element_by_xpath(
                 "//android.webkit.WebView[@content-desc='编辑员工']/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]/android.widget.EditText")
-        except AssertionError:
+        except NoSuchElementException:
             ele = Sin().driver.find_element_by_xpath(
                 "//android.webkit.WebView[@content-desc='编辑员工']/android.view.View/android.view.View/android.view.View/android.view.View[4]/android.view.View[2]/android.widget.EditText")
 
@@ -364,8 +372,10 @@ class Login():
         ele.send_keys("软件测试攻城狮")
         time.sleep(1)
         Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='确定']").click()
-        time.sleep(0.5)
-        t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='修改成功']")
+        #time.sleep(0.5)
+        t = WebDriverWait(Sin().driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH,"//android.view.View[@content-desc='修改成功']")))
+        #t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='修改成功']")
         t1 = t.get_attribute(name='content-desc')
         t2 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'软件测试')]")
         t4 = t2.get_attribute(name='content-desc')
@@ -406,8 +416,10 @@ class Login():
             "//android.webkit.WebView[@content-desc='填写跟进']/android.view.View/android.view.View/android.view.View/"
             "android.view.View[6]/android.view.View[3]/android.widget.EditText").send_keys("自动化测试")
         Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='确定']").click()
-        time.sleep(1.5)
-        t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='操作成功']")
+        #time.sleep(1)
+        #t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='操作成功']")
+        t = WebDriverWait(Sin().driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//android.view.View[@content-desc='操作成功']")))
         t1 = t.get_attribute(name='content-desc')
         t2 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'自动化测试')]")
         t4 = t2.get_attribute(name='content-desc')
@@ -440,8 +452,10 @@ class Login():
         Sin().driver.find_element_by_id("com.alibaba.android.rimet:id/btn_send").click()
         time.sleep(1)
         Sin().driver.find_element_by_xpath("//android.widget.Button[contains(@content-desc,'签到')]").click()
-        time.sleep(0.5)
-        t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='签到成功']")
+        #time.sleep(1)
+        #t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='签到成功']")
+        t = WebDriverWait(Sin().driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//android.webkit.WebView[@content-desc='拜访记录']/android.view.View/android.view.View[2]/android.view.View")))
         t1 = t.get_attribute(name='content-desc')
         t2 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'未签退')]")
         t4 = t2.get_attribute(name='content-desc')
@@ -463,17 +477,14 @@ class Login():
         TouchAction(Sin().driver).tap(x=986, y=1439).perform()
         time.sleep(50)
         try:
-
             Sin().driver.find_element_by_xpath("//android.widget.Button[contains(@content-desc,'签退')]").click()
-            time.sleep(0.5)
-            t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='签退成功']")
-            t1 = t.get_attribute(name='content-desc')
         except NoSuchElementException:
                 time.sleep(5)
                 Sin().driver.find_element_by_xpath("//android.widget.CheckBox[contains(@content-desc,'签退')]").click()
-                time.sleep(0.5)
-                t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='签退成功']")
-                t1 = t.get_attribute(name='content-desc')
+        t = WebDriverWait(Sin().driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//android.webkit.WebView[@content-desc='拜访记录']/android.view.View/android.view.View[2]/android.view.View")))
+        # t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='签退成功']")
+        t1 = t.get_attribute(name='content-desc')
         print(t1)
         time.sleep(0.5)
         t2 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'已签退')]")

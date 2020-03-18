@@ -104,13 +104,13 @@ class qianke():
         time.sleep(1)
         Sin().driver.find_element_by_xpath(
             "//android.widget.Button[@content-desc='保存']").click()
-        time.sleep(1)
-        t = Sin().driver.find_element_by_xpath(
-           "//android.webkit.WebView[@content-desc='潜客详情']/android.view.View/android.view.View[2]/android.view.View")
+        #time.sleep(1)
+        #t = Sin().driver.find_element_by_xpath(
+         #  "//android.webkit.WebView[@content-desc='潜客详情']/android.view.View/android.view.View[2]/android.view.View")
         #Sin().driver.refresh()
         #time.sleep(0.4)
 
-        time.sleep(0.5)
+        #time.sleep(0.5)
         '''
         try:
             t = Sin().driver.find_element_by_xpath(
@@ -120,8 +120,8 @@ class qianke():
             t = Sin().driver.find_element_by_xpath(
                 "//android.webkit.WebView[@content-desc='潜客详情']/android.view.View/android.view.View[2]/android.view.View")
         '''
-       # t = WebDriverWait(Sin().driver, 10).until(
-         #      EC.visibility_of_element_located((By.XPATH, "//android.webkit.WebView[@content-desc='潜客详情']/android.view.View/android.view.View[2]/android.view.View")))
+        t = WebDriverWait(Sin().driver, 10).until(
+               EC.visibility_of_element_located((By.XPATH, "//android.webkit.WebView[@content-desc='潜客详情']/android.view.View/android.view.View[2]/android.view.View")))
 
 
         #except (StaleElementReferenceException,TimeoutException):
@@ -161,8 +161,10 @@ class qianke():
         time.sleep(1)
         Sin().driver.find_element_by_xpath(
             "//android.view.View[@content-desc='确定']").click()
-        time.sleep(0.5)
-        t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='操作成功']")
+        #time.sleep(0.5)
+        t = WebDriverWait(Sin().driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//android.view.View[@content-desc='操作成功']")))
+        #t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='操作成功']")
         t1 = t.get_attribute(name='content-desc')
         t2 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'自动')]")
         t4 = t2.get_attribute(name='content-desc')
@@ -224,8 +226,10 @@ class qianke():
         time.sleep(1)
         Sin().driver.find_element_by_xpath(
             "//android.view.View[@content-desc='确定']").click()
-        time.sleep(0.5)
-        t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='跟进成功']")
+        #time.sleep(1)
+        #t = Sin().driver.find_element_by_xpath("//android.view.View[@content-desc='跟进成功']")
+        t = WebDriverWait(Sin().driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, "//android.view.View[@content-desc='跟进成功']")))
         t1 = t.get_attribute(name='content-desc')
         t2 = Sin().driver.find_element_by_xpath("//android.view.View[contains(@content-desc,'自动化测试')]")
         t4 = t2.get_attribute(name='content-desc')
